@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const cors=require('cors')
 const port = 7700;
-const rateLimit = require("express-rate-limit");
-// const helmet = require("helmet");
+// const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
 // db connection
 const dbconnection = require("./db/dbConfig");
 
