@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors=require('cors')
 const port = 7700;
-const rateLimit = require("express-rate-limit");
+// const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 // db connection
 const dbconnection = require("./db/dbConfig");
@@ -23,7 +23,7 @@ const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 100, // maximum of 100 requests per windowMs
 });
-app.use(limiter);
+// app.use(limiter);
 
 // Apply helmet middleware
 app.use(helmet());
