@@ -19,10 +19,10 @@ const authMiddleware = require("./middleware/authMiddleware");
 const answerRoutes = require("./routes/answerRoute")
 
 // Apply rate limiting middleware
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // maximum of 100 requests per windowMs
-});
+// const limiter = rateLimit({
+//   windowMs: 15 * 60 * 1000, // 15 minutes
+//   max: 100, // maximum of 100 requests per windowMs
+// });
 // app.use(limiter);
 
 // Apply helmet middleware
